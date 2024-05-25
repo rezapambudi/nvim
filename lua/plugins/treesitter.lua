@@ -5,7 +5,7 @@ return {
   -- setup tree sitter
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = { "lua", "javascript", "java", "rust", "dart" },
+      auto_install = true,
       highlight = { enabled = true },
       indent = { enabled = true },
     })
